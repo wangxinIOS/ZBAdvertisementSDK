@@ -1,0 +1,6 @@
+framework module ZBAdvertisementSDK {
+  umbrella header "ZBAdvertisementSDK.h"
+
+  export *
+  module * { export * }
+}

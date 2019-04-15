@@ -8,11 +8,11 @@ Cocoapods集成统计SDK，如工程target名为appDemo，在项目根目录的P
 
 ```
 target 'appDemo' do
-pod 'ZBAdFramework'
+pod 'ZBAdvertisementSDK'
 end
 ```
 
-ZBAdFramework支持的iOS最低版本为<font color=red>9.0</font>
+ZBAdvertisementSDK支持的iOS最低版本为<font color=red>9.0</font>
 
 ### Pod集成示例更新说明
 
@@ -32,7 +32,7 @@ $ pod update
 > 问题： pod search 报错：Unable to find a pod with name
 
 ```
-“Unable to find a pod with name, author, summary, or description matching `TrackerFramework`”
+“Unable to find a pod with name, author, summary, or description matching `ZBAdvertisementSDK`”
 ```
 
 > 原因：新增 Pod 项目并没有实时同步到 pod search 所需的索引文件中：~/Library/Caches/CocoaPods/search_index.json
@@ -53,7 +53,7 @@ rm ~/Library/Caches/CocoaPods/search_index.json
 
 ## 手动集成framwork
 
-在GitHub下载最新SDK https://github.com/wangxinIOS/
+在GitHub下载最新SDK https://github.com/wangxinIOS/ZBAdvertisementSDK
 
 依赖库
 
@@ -98,16 +98,41 @@ ClientId是广告SDK后台用来标示App的唯一标识符，集成SDK前需要
 ```
  ZBAdConfigure *confg = [ZBAdConfigure new];
  confg.debug = YES;//开发环境设置为YES
- [ZBAdApi gainApiWithClientId:@"cccc" andConfig:confg];
+ [ZBAdApi gainApiWithClientId:@"ClientId" andConfig:confg];
 ```
 
-TrackerConfiguration 属性的说明
+ZBAdConfigure 属性的说明
 
 ```
 /// debug模式 为true打印SDKlog信息  default:false
-
-@objc public var debugMode: Bool
+@property (nonatomic, assign) BOOL debug;
 ```
+
+
+
+ZBAdDelegate 代理方法的说明
+
+```
+/**
+ 广告加载失败
+
+ @param code 错误码
+ @param msg 错误信息
+ */
+- (void)onAdLoadFailure:(NSString *)code msg:(NSString *)msg;
+
+/**
+ 广告加载成功
+ */
+- (void)onAdLoadSuccess;
+
+/**
+ 广告被点击
+ */
+- (void)onAdClick;
+```
+
+
 
 <font color=red>由于SDK处于测试阶段，网络请求使用http协议，项目中需要进行一下配置</font>
 
