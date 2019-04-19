@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ZBAdvertisementSDK"
-  s.version      = "1.0.0.3"
+  s.version      = "1.0.0.4"
   s.summary      = "ZBAdvertisementSDK  framework"
 
   # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   ZBAdvertisementSDK 广告SDK,显示各种类型的广告
                    DESC
 
-  s.homepage     = "https://github.com/wangxinIOS/ZBAdvertisementSDK"
+  s.homepage     = "https://github.com/wangxinIOS/ZBAdvertisementSDK.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  s.frameworks = "CoreTelephony","StoreKit","AdSupport"
+  s.frameworks = "CoreTelephony","StoreKit","AdSupport","ImageIO","QuartzCore"
 
 
   # s.library   = "iconv"

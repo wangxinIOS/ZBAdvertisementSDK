@@ -16,8 +16,10 @@
 		1442D7A62239EB7A00F7CBC0 /* AdDemoObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1442D7A52239EB7A00F7CBC0 /* AdDemoObjcTests.m */; };
 		1442D7B12239EB7A00F7CBC0 /* AdDemoObjcUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1442D7B02239EB7A00F7CBC0 /* AdDemoObjcUITests.m */; };
 		147A2E46225D998D004D27B8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147A2E45225D998D004D27B8 /* StoreKit.framework */; };
-		147A2E6122642F8F004D27B8 /* ZBAdvertisementSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147A2E5C22642C6E004D27B8 /* ZBAdvertisementSDK.framework */; };
-		147A2E6222642F8F004D27B8 /* ZBAdvertisementSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 147A2E5C22642C6E004D27B8 /* ZBAdvertisementSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		147A2E6522687614004D27B8 /* ZBAdvertisementSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147A2E5C22642C6E004D27B8 /* ZBAdvertisementSDK.framework */; };
+		147A2E6622687614004D27B8 /* ZBAdvertisementSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 147A2E5C22642C6E004D27B8 /* ZBAdvertisementSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		147A2ED722697875004D27B8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147A2ED622697875004D27B8 /* QuartzCore.framework */; };
+		147A2ED92269787C004D27B8 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 147A2ED82269787C004D27B8 /* ImageIO.framework */; };
 		148B5B47223B7F450097ADEF /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148B5B46223B7F450097ADEF /* CoreTelephony.framework */; };
 		148B5B49223B7F5A0097ADEF /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148B5B48223B7F5A0097ADEF /* AdSupport.framework */; };
 		14DEEA352252F34000156E15 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14DEEA342252F34000156E15 /* BannerViewController.m */; };
@@ -43,13 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		147A2E4E225ED3B8004D27B8 /* Embed Frameworks */ = {
+		147A2E6722687614004D27B8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				147A2E6222642F8F004D27B8 /* ZBAdvertisementSDK.framework in Embed Frameworks */,
+				147A2E6622687614004D27B8 /* ZBAdvertisementSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +77,8 @@
 		1442D7B22239EB7A00F7CBC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147A2E45225D998D004D27B8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		147A2E5C22642C6E004D27B8 /* ZBAdvertisementSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZBAdvertisementSDK.framework; sourceTree = "<group>"; };
+		147A2ED622697875004D27B8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		147A2ED82269787C004D27B8 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		148B5B46223B7F450097ADEF /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		148B5B48223B7F5A0097ADEF /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		14DEEA332252F34000156E15 /* BannerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
@@ -90,8 +94,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				147A2E6522687614004D27B8 /* ZBAdvertisementSDK.framework in Frameworks */,
+				147A2ED92269787C004D27B8 /* ImageIO.framework in Frameworks */,
+				147A2ED722697875004D27B8 /* QuartzCore.framework in Frameworks */,
 				147A2E46225D998D004D27B8 /* StoreKit.framework in Frameworks */,
-				147A2E6122642F8F004D27B8 /* ZBAdvertisementSDK.framework in Frameworks */,
 				148B5B49223B7F5A0097ADEF /* AdSupport.framework in Frameworks */,
 				148B5B47223B7F450097ADEF /* CoreTelephony.framework in Frameworks */,
 			);
@@ -187,6 +193,8 @@
 		148B5B45223B7F440097ADEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				147A2ED82269787C004D27B8 /* ImageIO.framework */,
+				147A2ED622697875004D27B8 /* QuartzCore.framework */,
 				147A2E45225D998D004D27B8 /* StoreKit.framework */,
 				148B5B48223B7F5A0097ADEF /* AdSupport.framework */,
 				148B5B46223B7F450097ADEF /* CoreTelephony.framework */,
@@ -204,7 +212,7 @@
 				1442D7852239EB7800F7CBC0 /* Sources */,
 				1442D7862239EB7800F7CBC0 /* Frameworks */,
 				1442D7872239EB7800F7CBC0 /* Resources */,
-				147A2E4E225ED3B8004D27B8 /* Embed Frameworks */,
+				147A2E6722687614004D27B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

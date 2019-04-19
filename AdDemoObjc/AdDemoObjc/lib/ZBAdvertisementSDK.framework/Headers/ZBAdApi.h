@@ -28,13 +28,13 @@ NS_ASSUME_NONNULL_BEGIN
 
  @return 版本号 eg:1.0
  */
-- (NSString *)version;
++ (NSString *)version;
 
 
 /**
  清理缓存，图片资源文件
  */
-- (void)clearAdCache;
++ (void)clearAdCache;
 
 
 @end

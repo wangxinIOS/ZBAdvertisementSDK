@@ -55,14 +55,6 @@ rm ~/Library/Caches/CocoaPods/search_index.json
 
 在GitHub下载最新SDK https://github.com/wangxinIOS/ZBAdvertisementSDK
 
-依赖库
-
-```
-CoreTelephony.framework    获取运营商标识
-StoreKit.framework  应用内打开App Store
-AdSupport.framework 广告标识
-```
-
 集成步骤如下：
 
 1. 下载ZBAdFramework。
@@ -73,7 +65,15 @@ AdSupport.framework 广告标识
 
 3. 添加依赖库，在项目设置`target` -> 选项卡`General` ->`Linked Frameworks and Libraries`如下：
 
-![](https://i.loli.net/2019/04/10/5cad57283e225.png)
+   ```
+   CoreTelephony.framework    获取运营商标识
+   StoreKit.framework  应用内打开App Store
+   AdSupport.framework 广告标识
+   QuartzCore.framework
+   ImageIO.framework
+   ```
+
+![](https://i.loli.net/2019/04/19/5cb94381ca3f8.png)
 
 
 
@@ -97,7 +97,7 @@ ClientId是广告SDK后台用来标示App的唯一标识符，集成SDK前需要
 
 ```
  ZBAdConfigure *confg = [ZBAdConfigure new];
- confg.debug = YES;//开发环境设置为YES
+ confg.debug = YES;//开发环境设置为YES,会访问测试环境URL
  [ZBAdApi gainApiWithClientId:@"ClientId" andConfig:confg];
 ```
 
